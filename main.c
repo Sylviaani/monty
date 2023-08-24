@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	size_t line_num = 0;
 	stack_t *stack;
 
-	if (argc != )
+	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 
 	if (!file)
 	{
-		fprint(stedder, "Error: Can't open file %s\n", argv[1]);
+		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 	while (1)

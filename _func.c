@@ -34,7 +34,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		fprintf(stderr, "L%D: usage: push integer\n", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		fclose(var.file);
 		free(var.content);
 		free_stack(*stack);

@@ -61,7 +61,7 @@ void _mod(stack_t **stack, unsigned int line_number)
 	temp = *stack;
 	if (temp->n == 0)
 	{
-		fprint(stderr, "L%d: division by zero\n", line_number);
+		fprintf(stderr, "L%d: division by zero\n", line_number);
 		fclose(var.file);
 		free(var.content);
 		free_stack(*stack);

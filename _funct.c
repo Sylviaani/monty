@@ -21,7 +21,7 @@ void _swap(stack_t **stack, unsigned int line_number)
 
 	if (length < 2)
 	{
-		fprint(stderr, "L%d: can't swap, stack too short\n", line_number);
+		fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
 		fclose(var.file);
 		free(var.content);
 		free_stack(*stack);
